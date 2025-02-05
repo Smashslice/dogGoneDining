@@ -103,8 +103,21 @@ body {
 /* Footer Styles */
 
 .footerbtn {
-    margin-top: 5px;
-    padding: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0 0.75rem;
+}
+
+.footerbtn:hover {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+}
+
+.footerlinks {
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 0.5rem;
 }
 
 footer {
@@ -131,7 +144,7 @@ header h2 {
 
 /* Box classes */
 
-.itembox, .aboutusbox {
+.itembox,.contactbox {
     height: auto;
     width: auto;
     border-radius: 10px;
@@ -139,12 +152,12 @@ header h2 {
     box-shadow: -5px -5px var(--secondary-color);
     color: var(--tertiary-color);
     padding: 10px;
+    width: 35%;
+    font-size: 1.75rem;
 }
 
-.aboutusbox{
-    height: auto;
-    width: 25%;
-    font-size: 1.75rem;
+.contactbox {
+    width: 90%;
 }
 
 .flex-end {
