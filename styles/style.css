@@ -309,3 +309,61 @@ form input, form textarea {
 form h1{
     text-align: center;
 }
+
+form button {
+    width: 100%; /* Matches input field width */
+    max-width: 300px; /* Keeps consistent size */
+    height: 40px;
+    background-color: n;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+}
+
+
+/* Media Queries */
+
+@media (max-width: 810px){
+
+    .itembox{
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .mt-mobile {
+        margin-top: 1.5rem;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .navbar {
+    grid-template-columns: 0% auto auto auto auto 0%;
+    }
+    .navbtn {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 980px){
+    .container-lg {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
