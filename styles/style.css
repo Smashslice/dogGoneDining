@@ -8,10 +8,9 @@
 /* Variables */
 
 :root {
-    --primary-color: rgb(0, 140, 255);
+    --primary-color: rgb(82, 39, 39);
     --secondary-color: black;
     --tertiary-color: white;
-    --colors-color: rgb(82, 39, 39);
     
     --main-border: 15px;
     
@@ -79,7 +78,7 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    background-color: var(--colors-color);
+    background-color: var(--primary-color);
     grid-template-columns: 15% auto auto auto auto 15%;
 }
 
@@ -148,7 +147,7 @@ header h2 {
     height: auto;
     width: auto;
     border-radius: 10px;
-    background-color: var(--colors-color);
+    background-color: var(--primary-color);
     box-shadow: -5px -5px var(--secondary-color);
     color: var(--tertiary-color);
     padding: 10px;
@@ -196,6 +195,7 @@ header h2 {
 }
 
 .dogimg {
+    width: auto;
     align-self: center;
 }
 
@@ -207,6 +207,7 @@ section p {
 .menu {
     height: auto;
     width: 100%;
+    border: 5px solid var(--secondary-color);
 }
 
 /* About us classes */
@@ -274,7 +275,7 @@ section p {
 }
 
 .shop-button:hover {
-    background-color: var(--colors-color);
+    background-color: var(--primary-color);
 }
 
 .shop-button:hover {
