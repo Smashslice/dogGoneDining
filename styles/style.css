@@ -1,0 +1,131 @@
+/* Global reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+
+:root {
+    --primary-color: rgb(0, 140, 255);
+    --secondary-color: black;
+    --tertiary-color: white;
+    --colors-color: rgb(82, 39, 39);
+    
+    --main-border: 15px;
+    
+    --card-shadows: ;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container90{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mt {
+    margin-top: 1.5rem;
+}
+.mb {
+    margin-bottom: 1.5rem;
+}
+.mr {
+    margin-right: 1.5rem;
+}
+.ml {
+    margin-left: 1.5rem;
+}
+
+.pt {
+    padding-top: 1.5rem;
+}
+.pb {
+    padding-bottom: 1.5rem;
+}
+.pr {
+    padding-right: 1.5rem;
+}
+.pl {
+    padding-left: 1.5rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    display: flex;
+}
+
+/* Navbar styles */
+
+.navbar, footer {
+    display: grid;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: var(--colors-color);
+    grid-template-columns: 15% auto auto auto auto 15%;
+}
+
+.navbtn, .footerbtn {
+    color: var(--secondary-color);
+    border-radius: var(--main-border);
+    background-color: var(--tertiary-color);
+    font-size: 1.5rem;
+    font-weight: 400px;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navbtn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px black;
+}
+
+/* Footer Styles */
+
+.footerbtn {
+    margin-top: 5px;
+    padding: 2px;
+}
+
+footer {
+    color: var(--tertiary-color);
+}
+
+/* Header Styles */
+
+.text-center {
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Playwrite IN Guides", serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header h2 {
+    font-family: "Oooh Baby", serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
