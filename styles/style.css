@@ -144,7 +144,7 @@ header h2 {
 
 /* Box classes */
 
-.itembox,.contactbox {
+.itembox,.contactbox,.aboutusbox,.aboutusbox2,.aboutusbox3  {
     height: auto;
     width: auto;
     border-radius: 10px;
@@ -160,31 +160,58 @@ header h2 {
     width: 90%;
 }
 
+.aboutusbox,.aboutusbox2,.aboutusbox3 {
+    padding: 15px;
+    width: 80%;
+    box-shadow: 0 0 black;
+}
+
+.aboutusbox2 {
+    margin-left: 10%;
+}
+
+.aboutusbox3 {
+    margin-left: 20%;
+}
+
 .flex-end {
     justify-content: flex-end;
 }
 
+.center{
+    justify-content: center;
+}
+
 /* Index Classes */
 
-.aboutusimg, .aboutusimg2 {
+.aboutusimg,.dogimg {
     height: 250px;
     width: auto;
     border: 5px solid var(--tertiary-color);
     margin: 0.5rem 0;
 }
 
-.aboutusimg2 {
-    justify-self: flex-end;
+.dogimg {
+    height: 85%;
+    align-self: center;
 }
 
-.aboutustext {
+section p {
     border: 5px dotted var(--tertiary-color);
     padding: 2px;
 }
 
+/* About us classes */
 
+.link {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    text-shadow: 1px 1px var(--secondary-color);
+}
 
-
+.link:hover {
+    text-shadow: 1px 1px var(--tertiary-color);
+}
 
 
 
