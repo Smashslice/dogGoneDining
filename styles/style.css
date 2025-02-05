@@ -12,9 +12,8 @@
     --secondary-color: black;
     --tertiary-color: white;
     
-    --main-border: 15px;
-    
-    --card-shadows: ;
+    --button-border: 15px;
+    --main-border: 5px;
 }
 
 body {
@@ -87,7 +86,7 @@ body {
     border-radius: var(--main-border);
     background-color: var(--tertiary-color);
     font-size: 1.5rem;
-    font-weight: 400px;
+    font-weight: 400;
     align-items: center;
     align-content: center;
     text-decoration: none;
@@ -102,7 +101,7 @@ body {
 /* Footer Styles */
 
 .footerbtn {
-    border-radius: 5px;
+    border-radius: var(--main-border);
     padding: 3px;
     margin: 0 0.75rem;
 }
@@ -114,7 +113,7 @@ body {
 
 .footerlinks {
     background-color: var(--tertiary-color);
-    border-radius: 5px;
+    border-radius: var(--main-border);
     padding: 4px;
     margin-top: 0.5rem;
 }
@@ -270,7 +269,7 @@ section p {
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--main-border);
     transition: background 0.3s;
 }
 
@@ -288,9 +287,9 @@ section p {
 
 /* Form css */
 
-form {
-    /* design of the overall form */
-    
+form{
+/* design of the overall form */
+    margin-top: 10px;
     background-color: #fff;
     margin: auto;
     width: 50%;
@@ -300,6 +299,7 @@ form {
     flex-direction: column;
     gap: 15px;
     max-width: 400px;
+    border: 5px double black;
 }
 
 form input, form textarea {
@@ -311,22 +311,24 @@ form h1{
 }
 
 form button {
-    width: 100%; /* Matches input field width */
-    max-width: 300px; /* Keeps consistent size */
     height: 40px;
-    background-color: n;
+    background-color: var(--primary-color);
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--main-border);
     cursor: pointer;
+    text-align: center;
 }
 
 form button:hover {
+    background-color: var(--secondary-color);
 }
 
 
 /* Media Queries */
+
+/* Mobile and tablet viewing changes */
 
 @media (max-width: 810px){
 
@@ -357,6 +359,8 @@ form button:hover {
         font-size: 1.25rem;
     }
 }
+
+/* Adjustments for extra margins on large screens */
 
 @media (min-width: 980px){
     .container-lg {
