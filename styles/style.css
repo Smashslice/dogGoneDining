@@ -182,6 +182,10 @@ header h2 {
     justify-content: center;
 }
 
+.align-center{
+    align-items: center;
+}
+
 /* Index Classes */
 
 .aboutusimg,.dogimg {
@@ -192,13 +196,18 @@ header h2 {
 }
 
 .dogimg {
-    height: 85%;
+    height: 50%;
     align-self: center;
 }
 
 section p {
-    border: 5px dotted var(--tertiary-color);
+    border: 5px double var(--tertiary-color);
     padding: 2px;
+}
+
+.menu {
+    height: auto;
+    width: 100%;
 }
 
 /* About us classes */
@@ -272,4 +281,31 @@ section p {
 .shop-button:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* form section */
+
+/* Form css */
+
+form {
+    /* design of the overall form */
+    
+    background-color: #fff;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+form input, form textarea {
+    height: 40px;
+}
+
+form h1{
+    text-align: center;
 }
